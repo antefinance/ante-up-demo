@@ -1,0 +1,37 @@
+{
+  "name": "ante-up-demo",
+  "license": "UNLICENSED",
+  "description": "Ante Finance Proof Of Transaction Demo",
+  "devDependencies": {
+    "@typechain/ethers-v5": "^7.0.1",
+    "@types/ethereumjs-util": "^6.1.0",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.4.13",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "ethereumjs-util": "^7.1.5",
+    "ethers": "^5.4.4",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.17",
+    "pretty-quick": "^3.1.1",
+    "ts-node": "^10.2.0",
+    "typechain": "^5.1.2",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@ethereumjs/block": "^4.2.1",
+    "@ethereumjs/trie": "^5.0.4",
+    "@ethereumjs/tx": "^4.1.1",
+    "merkle-tools": "^1.4.1",
+    "merkletreejs": "^0.3.9",
+    "rlp": "^3.0.0"
+  },
+  "scripts": {
+    "lint:ts": "eslint --config ./.eslintrc.yaml --ignore-path ./.eslintignore --ext .js,.ts .",
+    "create-proof": "ts-node ./index.ts"
+  }
+}
